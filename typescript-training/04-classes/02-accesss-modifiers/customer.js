@@ -1,11 +1,11 @@
 "use strict";
-var Customer1 = /** @class */ (function () {
+var Customer = /** @class */ (function () {
     //constructor
-    function Customer1(theFirst, theLast) {
+    function Customer(theFirst, theLast) {
         this._firstName = theFirst;
         this._lastName = theLast;
     }
-    Object.defineProperty(Customer1.prototype, "firstName", {
+    Object.defineProperty(Customer.prototype, "firstName", {
         //getter / setter methods
         // public getFirstName(): string {
         //     return this.firstName;
@@ -26,7 +26,7 @@ var Customer1 = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    Object.defineProperty(Customer1.prototype, "lastName", {
+    Object.defineProperty(Customer.prototype, "lastName", {
         get: function () {
             return this._lastName;
         },
@@ -36,7 +36,7 @@ var Customer1 = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    return Customer1;
+    return Customer;
 }());
 //now let use it
 // myCustomer.firstName = 'Martin';
@@ -46,8 +46,9 @@ var Customer1 = /** @class */ (function () {
 //using backticks for constructor value
 // console.log(`Fullname: ${myCustomer.firstName} ${myCustomer.lastName}`);
 //using setter and getter function of the class customer
+var myCustomer = new Customer("", "");
 myCustomer.firstName = "John";
-// myCustomer.lastName = "Banasihan";
+myCustomer.lastName = "Banasihan";
 console.log(myCustomer.firstName);
 // console.log(myCustomer.);
 // console.log(myCustomer.firstName + " " + myCustomer.lastName); 

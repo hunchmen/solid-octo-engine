@@ -58,8 +58,9 @@ class  Customer {
 // console.log(`Fullname: ${myCustomer.firstName} ${myCustomer.lastName}`);
 
 //using setter and getter function of the class customer
+let myCustomer = new Customer("", "");
 myCustomer.firstName = "John";
-myCustomer. = "Banasihan";
+myCustomer.lastName = "Banasihan";
 console.log(myCustomer.firstName);
 // console.log(myCustomer.);
 // console.log(myCustomer.firstName + " " + myCustomer.lastName); 

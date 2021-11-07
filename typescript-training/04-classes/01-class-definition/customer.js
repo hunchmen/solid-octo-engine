@@ -1,37 +1,38 @@
-// "use strict";
-// var Customer = /** @class */ (function () {
+"use strict";
+// class  Customer {
+//     //properties
+//     //properties access level is public by default
+//     //private can be access only on its own class and subclasses
+//     private _firstName: string;
+//     private _lastName: string;
+//     lastName: string;
 //     // firstName: string;
 //     // lastName: string;
 //     //constructor
-//     function Customer(theFirst, theLast) {
+//     constructor(theFirst: string, theLast: string) {
 //         this._firstName = theFirst;
 //         this._lastName = theLast;
 //     }
-//     Object.defineProperty(Customer.prototype, "firstName", {
-//         //getter / setter methods
-//         // public getFirstName(): string {
-//         //     return this.firstName;
-//         // }
-//         // public setFirstName(theFirst: string): void {
-//         //     this.firstName = theFirst;
-//         // }
-//         // public getLastName(): string {
-//         //     return this.lastName;
-//         // }
-//         //accessor for get and set method
-//         get: function () {
-//             return this._firstName;
-//         },
-//         set: function (value) {
-//             this._firstName = value;
-//         },
-//         enumerable: false,
-//         configurable: true
-//     });
-//     return Customer;
-// }());
+//     //getter / setter methods
+//     // public getFirstName(): string {
+//     //     return this.firstName;
+//     // }
+//     // public setFirstName(theFirst: string): void {
+//     //     this.firstName = theFirst;
+//     // }
+//     // public getLastName(): string {
+//     //     return this.lastName;
+//     // }
+//     //accessor for get and set method
+//     public get firstName() : string {
+//         return this._firstName;
+//     }
+//     public set firstName(value: string) {
+//         this._firstName = value;
+//     }
+// }
 // //now let use it
-// var myCustomer = new Customer('Ariel', 'Nievera');
+// let myCustomer = new Customer('Ariel', 'Nievera');
 // // myCustomer.firstName = 'Martin';
 // // myCustomer.lastName = 'Dixon';
 // // console.log(myCustomer.firstName);
