@@ -3,6 +3,8 @@
 ##Online e-commerce ordering system
 
 ###**Technology Stack used:**
-> Springboot - Backend
-> Angular - Front end
-
+ 
+ ```
+ Springboot - Backend
+ Angular - Front end
+```
