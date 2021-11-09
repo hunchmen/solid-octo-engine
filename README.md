@@ -1,10 +1,8 @@
 # solid-octo-engine
-Online e-commerce ordering system
 
-Technology Stack used:
+##Online e-commerce ordering system
 
-Springboot - Backend
-Angular - Front end
+###**Technology Stack used:**
+> Springboot - Backend
+> Angular - Front end
 
-
-Test
