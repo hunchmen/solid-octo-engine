@@ -1,8 +1,6 @@
-# solid-octo-engine
+# Online e-commerce ordering system
 
-##Online e-commerce ordering system
-
-###**Technology Stack used:**
+### **Technology Stack used:**
  
  ```
  Springboot - Backend
