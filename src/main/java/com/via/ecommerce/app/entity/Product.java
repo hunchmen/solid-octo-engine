@@ -16,14 +16,10 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Entity
 @Table(name = "product")
-//@Data
-@Getter
-@Setter
+@Data
 public class Product {
 	
 	@Id
