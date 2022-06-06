@@ -1,8 +1,6 @@
 package com.via.ecommerce.app.dao;
 
-import java.util.List;
-
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.via.ecommerce.app.entity.Product;
 
@@ -11,8 +9,6 @@ import com.via.ecommerce.app.entity.Product;
  * 
  */
 
-@Repository
-public interface ProductRepository {
-	
-	List<Product> getAllProducts();
+public interface ProductRepository extends JpaRepository<Product, Long> {
+
 }
