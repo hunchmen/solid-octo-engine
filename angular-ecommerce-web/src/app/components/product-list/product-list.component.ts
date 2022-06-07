@@ -4,12 +4,13 @@ import { ProductService } from 'src/app/sevices/product.service';
 
 @Component({
   selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
+  templateUrl: './product-list-table.component.html',
+  // templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
 
-  products: Product[] = [];
+  products: Product[] | undefined;
 
   constructor(private productService: ProductService) { }
 
@@ -18,11 +19,8 @@ export class ProductListComponent implements OnInit {
   }
 
   listProducts() {
-    this.productService.getProductList().subscribe(
-      data => {
-        this.products = data;
-      }
-    )
+    this.productService.getProductList()
+      .subscribe(data => this.products = data);
   }
 
 }
